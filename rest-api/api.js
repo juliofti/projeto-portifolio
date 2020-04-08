@@ -16,6 +16,7 @@ router.get("/",(req, resp) => resp.json({
 }));
 
 api.use('/', router);
+api.use('/portifolio')
 
 api.listen(port);
 
