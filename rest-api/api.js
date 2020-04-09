@@ -5,6 +5,9 @@ const api = express();
 const port = 3000;
 const router = express.Router();
 
+
+const portifolioRouter = require('./router/portifolioRouter');
+
 //O cors permite a api de receber requisiçoes de portas e servidores diferentes 
 api.use(cors());
 
@@ -16,7 +19,7 @@ router.get("/",(req, resp) => resp.json({
 }));
 
 api.use('/', router);
-api.use('/portifolio')
+api.use('/portifolio', portifolioRouter);
 
 api.listen(port);
 

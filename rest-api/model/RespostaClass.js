@@ -1,4 +1,4 @@
-class RespostaClass{
+module.exports = class RespostaClass{
 
     constructor(){
         this.erro = false;
